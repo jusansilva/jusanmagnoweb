@@ -20,5 +20,6 @@ if (mail($to, $subject, $message, $headers)) {
     $_SESSION['msg'] = 'Mensagem enviada com sucesso';
     header('Location: contact.html');
 } else {
+    
     $_SESSION['msg'] = 'há um erro ao enviar mensagem. Tente mais tarde';
 }
